@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear {
+    clear: both;
+}
+.float-lft{
+    float: left;
+}
+.float-rit{
+    float: right;
+}
+.container {
+    width: 1024px;
+    height: 640px;
+    background: #ddd;
+    margin: 30px auto;
+}
+.icon-container {
+    text-align: center;
+    position: relative;
+    top: 240px;
+}
+.img-iot {
+    border: 1px solid #ddf;
+    box-shadow: 5px 5px 7px #888888;
+    display: inline;
+}
+.edit-container {
+    padding: 10px;
+    float: left;
+}
+.component-sidebar {
+    float: left;
+    width: 180px;
+    height: 587px;
+    border: 1px solid #838b8b;
+    overflow: auto;
+}
+.content-editable {
+    float: left;
+    width: 800px;
+    height: 587px;
+    margin-left: 5px;
+    background: white;
+}
+.component-img{
+    display: inline;
+    margin-left: 30px
+}
+.run-btn{
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 4px;
+    position: relative; 
+    left:940px;
+    bottom:60px;
+    appearance: button;
+    text-decoration: none;
+    color: white;
+}
+.lft-container{
+    width: 300px;
+    float: left;
+    padding-top: 20px; 
+}
+.rit-container{
+    width: 650px;
+    float: right;
+    padding-top: 20px;
+}
+
+.dialogue-rit{
+    list-style-type: none;
+    width: 320px;
+    padding: 20px;
+}
+header{
+    width: 100%;
+    height: 30px;
+    background-color: #354361;
+}
+.dialogue-lft {
+    list-style-type: none;
+    padding: 20px;
+
+}
+.dig-btm{
+    min-height: 150px;
+    width: 100%;
+    border: 1px solid #354361;
+}
+.dig-btmrit{
+    min-height: 200px;
+    width: 100%;
+    border: 1px solid #354361;
+}
+.widget{
+    padding: 20px 10px 5px 10px;
+    text-align: center;
+
+}
+.circle{
+    fill:none;
+}
+.outline {
+    stroke: #F1F1F1;
+    stroke-width: 32; 
+}
+#mask{
+    stroke: #F1F1F1;
+    stroke-width: 31; 
+}
+.range { stroke-width: 30; }
+#meter { transform: rotateX(180deg); }
+.reading-zero{
+   position: relative;
+   bottom: 85px;
+   right: 20px;
+}
+.reading-hundred {
+    position: relative;
+    bottom: 85px;
+    left: 65px;
+}
+.reading-center{
+     position: relative;
+     bottom: 100px;
+     left: 23px;
+ }

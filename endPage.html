@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>End Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="lft-container">
+			<ul>
+				<li class="dialogue-lft">
+					<header>
+						<p style="color: white; padding: 5px">Board ID</p>
+					</header>
+					<div class="dig-btm">	
+					</div>
+				</li>
+				<li class="dialogue-lft">
+					<header>
+						<p style="color: white; padding: 5px">Red LED</p>
+					</header>
+					<div class="dig-btm">	
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="rit-container">
+			<ul>
+				<li class="dialogue-rit float-lft">
+					<header>
+						<p style="color: white; padding: 5px">TEMPERATURE</p>
+					</header>
+					<div class="dig-btmrit">
+						<div class="widget">
+							<svg width="250" height="180" id="meter">
+								<circle cx="50%" cy="50%" r="70" class="circle outline" id="outline_curves"></circle>
+								<circle id="low" class="circle range" cx="50%" cy="50%" stroke="#ff0000" r="70"></circle>
+								<circle id="mask" class="circle" cx="50%" cy="50%" r="70">
+	    						</circle>
+	    					</svg>
+	    					<span class="reading-zero">0</span>
+	    					<span class="reading-center" id="tempValue">0&#176;<span> C</span></span>
+	    					<span class="reading-hundred">100</span>
+							<button onclick="slide();" style="position:relative; bottom:40px; left:60px">click</button>
+						</div>	
+					</div>
+				</li>
+				<li class="dialogue-rit float-rit">
+					<header>
+						<p style="color: white; padding: 5px">HUMIDITY</p>
+					</header>
+					<div class="dig-btmrit">
+						<div class="widget">
+							<svg width="250" height="180" id="meter">
+								<circle cx="50%" cy="50%" r="70" class="circle outline" id="outline_curves_hum"></circle>
+								<circle id="low_hum" class="circle range" cx="50%" cy="50%" stroke="#ff0000" r="70"></circle>
+								<circle id="mask_hum" class="circle" cx="50%" cy="50%" r="70">
+	    						</circle>
+	    					</svg>
+	    					<span class="reading-zero">0</span>
+	    					<span class="reading-center" id="tempValue">0&#176;<span> C</span></span>
+	    					<span class="reading-hundred">100</span>
+							<button onclick="slide();" style="position:relative; bottom:40px; left:60px">click</button>
+						</div>	
+					</div>
+				</li>
+				<div class="clear"></div>
+				<li class="dialogue-rit float-lft">
+					<header>
+						<p style="color: white; padding: 5px">MAGNETOMETER</p>
+					</header>
+					<div class="dig-btmrit">
+					<div class="widget">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" height="200px" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet" >
+							<path fill="#edebeb" stroke="none" d="M50,128L20,128A80,80,0,0,1,180,128L150,128A50,50,0,0,0,50,128Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="#a9d70b" stroke="none" d="M50,128L20,128A80,80,0,0,1,20,127.99999999999999L50,128A50,50,0,0,0,50,128Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<text x="100" y="114.28571428571429" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#d3d4d4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 25px; line-height: normal; font-family: Arial; fill-opacity: 1;" font-size="25px" font-weight="bold" font-family="Arial" fill-opacity="1"><tspan dy="9.004464285714292" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text>
+							<text x="100" y="132.78571428571428" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Arial; fill-opacity: 1;" font-size="10px" font-weight="normal" font-family="Arial" fill-opacity="1"><tspan dy="3.5044642857142776" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Hz</tspan></text>
+							<text x="35" y="141.99999999999997" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Arial; fill-opacity: 1;" font-size="10px" font-weight="normal" font-family="Arial" fill-opacity="1"><tspan dy="3.4999999999999716" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text>
+							<text x="165" y="141.99999999999997" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Arial; fill-opacity: 1;" font-size="10px" font-weight="normal" font-family="Arial" fill-opacity="1"><tspan dy="3.4999999999999716" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan></text>
+							</svg>
+						</div>		
+					</div>
+				</li>
+				<li class="dialogue-rit float-rit">
+					<header>
+						<p style="color: white; padding: 5px">PRESSURE</p>
+					</header>
+					<div class="dig-btmrit">	
+						<div class="widget">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" height="200px" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet" >
+							<path fill="#edebeb" stroke="none" d="M50,128L20,128A80,80,0,0,1,180,128L150,128A50,50,0,0,0,50,128Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="#ff0000" stroke="none" d="M50,128L20,128A80,80,0,0,1,180,128L150,128A50,50,0,0,0,50,128Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<text x="100" y="114.28571428571429" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#d3d4d4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 25px; line-height: normal; font-family: Arial; fill-opacity: 1;" font-size="25px" font-weight="bold" font-family="Arial" fill-opacity="1"><tspan dy="9.004464285714292" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text>
+							<text x="100" y="132.78571428571428" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Arial; fill-opacity: 1;" font-size="10px" font-weight="normal" font-family="Arial" fill-opacity="1"><tspan dy="3.5044642857142776" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Psi</tspan></text>
+							<text x="35" y="141.99999999999997" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Arial; fill-opacity: 1;" font-size="10px" font-weight="normal" font-family="Arial" fill-opacity="1"><tspan dy="3.4999999999999716" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text>
+							<text x="165" y="141.99999999999997" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Arial; fill-opacity: 1;" font-size="10px" font-weight="normal" font-family="Arial" fill-opacity="1"><tspan dy="3.4999999999999716" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan></text>
+							</svg>
+						</div>	
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
